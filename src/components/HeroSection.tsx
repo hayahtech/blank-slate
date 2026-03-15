@@ -3,10 +3,12 @@ import { Button } from "@/components/ui/button";
 
 const words = ["Construindo", "o", "invisível."];
 
+const easeExpo: [number, number, number, number] = [0.19, 1, 0.22, 1];
+
 const entrance = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: [0.19, 1, 0.22, 1] },
+  transition: { duration: 0.8, ease: easeExpo },
 };
 
 const HeroSection = () => {

@@ -33,7 +33,7 @@ const GridSection = () => {
             transition={{
               duration: 0.8,
               delay: i * 0.1,
-              ease: [0.19, 1, 0.22, 1],
+              ease: easeExpo,
             }}
             className="border border-border p-8 rounded-sm"
           >
